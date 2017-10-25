@@ -1,23 +1,24 @@
 #use this below in LXTerminal to install pyside module
 #sudo apt-get install python3-pyside
 
-import turtle
 import sys
-from PyQt5 import *
-from PyQt5.QtWidgets import *
-from PyQt5.QtGui import *
+import turtle
+from PyQt5 import QtCore, QtWidgets
+from PyQt5 import QtGui
+from PyQt5.QtWidgets import QApplication
 
-class TurtleControl(QWidget):
+
+class TurtleControl(QtWidgets.QWidget):
     def __init__(self, turtle):
         super(TurtleControl, self) . __init__()
         self.turtle = turtle
 
-        self.left_btn = QPushButton("Left", self)
-        self.right_btn = QPushButton("Right", self)
-        self.move_btn = QPushButton("Move", self)
-        self.distance_spin = QSpinBox()
+        self.left_btn = QtWidgets.QPushButton("Left", self)
+        self.right_btn = QtWidgets.QPushButton("Right", self)
+        self.move_btn = QtWidgets.QPushButton("Move", self)
+        self.distance_spin = QtWidgets.QSpinBox()
 
-        self.controlsLayout = QGridLayout()
+        self.controlsLayout = QtWidgets.QGridLayout()
         self.controlsLayout.addWidget(self.left_btn, 0, 0)
         self.controlsLayout.addWidget(self.right_btn, 0, 1)
         self.controlsLayout.addWidget(self.distance_spin,1 , 0)
