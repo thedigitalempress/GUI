@@ -1,4 +1,4 @@
-#use this below in LXTerminal to install pyside module
+#use in LXTerminal to install pyside module
 #sudo apt-get install python3-pyside
 
 import sys
