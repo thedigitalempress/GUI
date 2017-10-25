@@ -1,9 +1,6 @@
 #use this below in LXTerminal to install pyside module
 #sudo apt-get install python3-pyside
 
-#use #use this below in Terminal to install pyside module
-#brew install python3-pyside
-
 import turtle
 import sys
 from PyQt5 import *
