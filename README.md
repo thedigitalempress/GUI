@@ -1,4 +1,4 @@
-# The-Digital-Trap-House
+# GUI
 GUI widget that allows you to move left and right to create pictures.
 
 In case none of this makes since to you and you need a visual representation to follow along check out the youtube video I made:
